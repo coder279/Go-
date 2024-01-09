@@ -18,7 +18,7 @@
 
 1. 克隆项目到本地
    ```sh
-   git clone https://github.com/your_username/your_project.git
+   git clone https://github.com/coder279/Go-.git
 2. 安装项目
    ```
     go mod tidy
