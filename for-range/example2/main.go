@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	var c chan string
+	for v := range c {
+		fmt.Println(v)
+	}
+	select {}
+}
