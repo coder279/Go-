@@ -10,8 +10,9 @@ func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
 	return s
 }
 func main() {
-	m := make(map[string]int64)
+	m := make(map[string]float64)
 	m["s1"] = 1.0
-	sum := SumIntsOrFloats(m)
+	//sum := SumIntsOrFloats[string, float64](m) //显示调用
+	sum := SumIntsOrFloats(m) //隐式调用
 	log.Printf("sum:%v\n", sum)
 }
